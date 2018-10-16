@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="675.0" maxWidth="1200.0" minHeight="675.0" minWidth="1200.0" prefHeight="675" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.scenes.controllers.SideDeckController">
+  <children>
+    <VBox fx:id="vbox" alignment="CENTER" maxHeight="675" maxWidth="1100.0" minHeight="675" minWidth="1100.0" prefHeight="675" prefWidth="1200.0" spacing="20.0" styleClass="back" stylesheets="@../../assets/css/menu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblPlayer" text="Selecting player 1's sidedeck" />
+            <GridPane fx:id="ownedCards">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="79.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="600.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="54.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </GridPane>
+            <GridPane fx:id="selectedCards">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button id="buttonR" fx:id="btnCancel1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="181.0" mnemonicParsing="false" onAction="#btnCancel1Click" onMouseEntered="#btnCancel1Enter" onMouseExited="#btnCancel1Exit" prefHeight="60.0" prefWidth="181.0" stylesheets="@../../assets/css/menu.css" text="Cancel" textOverrun="CLIP">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="52.0" right="59.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="buttons" fx:id="btnShop" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="376.0" mnemonicParsing="false" onAction="#btnShopClick" onMouseEntered="#btnShopEnter" onMouseExited="#btnShopExit" prefHeight="60.0" prefWidth="433.0" stylesheets="@../../assets/css/menu.css" text="buy more cards" textOverrun="CLIP">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="59.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="buttons" fx:id="btnConfirm" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minWidth="357.0" mnemonicParsing="false" onAction="#btnConfirmClick" onMouseEntered="#btnConfirmEnter" onMouseExited="#btnConfirmExit" prefHeight="60.0" prefWidth="357.0" stylesheets="@../../assets/css/menu.css" text="Confirm" textOverrun="CLIP">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="59.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+    </VBox>
+  </children>
+</AnchorPane>

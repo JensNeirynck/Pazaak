@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" maxHeight="675.0" maxWidth="1200.0" minHeight="675.0" minWidth="1200.0" prefHeight="675" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.scenes.controllers.ShopController">
+  <children>
+      <VBox prefHeight="675.0" prefWidth="1200.0">
+         <children>
+            <GridPane fx:id="buyableCards1" alignment="CENTER" prefHeight="234.0" prefWidth="1200.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox prefHeight="530.0" prefWidth="1206.0">
+               <children>
+                  <VBox prefHeight="505.0" prefWidth="750.0">
+                     <children>
+                        <GridPane fx:id="buyableCards2" alignment="CENTER" prefHeight="190.0" prefWidth="750.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <Label id="labelbig" fx:id="lblCredits" prefHeight="88.0" prefWidth="778.0" stylesheets="@../../assets/css/menu.css" text="Label">
+                           <font>
+                              <Font size="52.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="491.0" prefWidth="447.0">
+                     <children>
+                        <ImageView fx:id="imgSelectedCard" fitHeight="220.0" fitWidth="446.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></ImageView>
+                        <Label id="labelsmall" fx:id="lblExplanation" prefHeight="136.0" prefWidth="452.0" stylesheets="@../../assets/css/menu.css" text="uitleg" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="labelbig" fx:id="lblCost" prefHeight="67.0" prefWidth="445.0" stylesheets="@../../assets/css/menu.css" text="Prijs">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <Button id="buttons" fx:id="btnBuy" graphicTextGap="0.0" minWidth="113.0" mnemonicParsing="false" onAction="#btnBuyClick" onMouseEntered="#btnBuyEnter" onMouseExited="#btnBuyExit" prefHeight="62.0" prefWidth="437.0" stylesheets="@../../assets/css/menu.css" text="Buy this card" textOverrun="CLIP">
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button id="buttons" fx:id="btnCancel" graphicTextGap="0.0" layoutX="25.0" layoutY="598.0" minWidth="176.0" mnemonicParsing="false" onAction="#btnCancelClick" onMouseEntered="#btnCancelEnter" onMouseExited="#btnCancelExit" prefHeight="56.0" prefWidth="400.0" stylesheets="@../../assets/css/menu.css" text="Cancel" textOverrun="CLIP">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+  </children>
+</AnchorPane>
