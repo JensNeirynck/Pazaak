@@ -4,7 +4,7 @@
 
 For our first year assignment we needed to make the game Pazaak. Pazaak is a card game situated in the Star Wars universe.
 First we needed to make a console application and later a JavaFX version using the same underlying code.
-Below you can also find a video gameplay of our version of the game. At the moment the game uses a local database connection so if you would want to try the game yourself you can send me an email at jensneirynck@hotmail.com and I will send the database SQL script.
+Below you can also find a video gameplay of our version of the game. At the moment the game uses a local database connection so if you would want to try the game yourself you can send me an email and I will send the database SQL script.
 
 ## Team
 
